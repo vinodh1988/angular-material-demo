@@ -1,0 +1,14 @@
+
+
+<h1 mat-dialog-title>Update Record</h1>
+<div mat-dialog-content>
+  Name
+  
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.info.name">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.info.name" cdkFocusInitial>Ok</button>
+</div>
